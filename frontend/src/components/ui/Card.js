@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Card = ({ 
   title, 
@@ -29,7 +29,7 @@ const Card = ({
         
         {linkTo && (
           <Link 
-            to={linkTo}
+            href={linkTo}
             className="text-primary-500 font-medium hover:text-primary-600 transition-colors duration-200 inline-flex items-center"
           >
             {linkText} 

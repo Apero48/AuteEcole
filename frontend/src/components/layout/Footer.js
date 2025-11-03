@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
@@ -94,7 +94,7 @@ const SocialLink = ({ href, icon }) => {
 const FooterLink = ({ to, children }) => {
   return (
     <li>
-      <Link to={to} className="text-gray-300 hover:text-secondary-300 transition-colors duration-200 text-sm">
+      <Link href={to} className="text-gray-300 hover:text-secondary-300 transition-colors duration-200 text-sm">
         {children}
       </Link>
     </li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Button = ({ 
   children, 
@@ -31,7 +31,7 @@ const Button = ({
   
   if (as === 'link' && to) {
     return (
-      <Link to={to} className={allStyles} {...props}>
+      <Link href={to} className={allStyles} {...props}>
         {children}
       </Link>
     );

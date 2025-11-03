@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { FaSearch, FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
@@ -45,7 +45,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img src="/images/WhatsApp Image 2025-09-17 at 04.33.35 (5).jpeg" alt="Auto-école Logo" className="h-12" />
             <div className="text-primary-700 font-bold text-2xl ml-2">
               <span className="text-accent-500">Auto-école</span>
@@ -96,7 +96,7 @@ const Header = () => {
 const NavLink = ({ to, children }) => {
   return (
     <Link 
-      to={to} 
+      href={to} 
       className="text-primary-700 font-medium hover:text-accent-500 transition-colors duration-200"
     >
       {children}
@@ -107,7 +107,7 @@ const NavLink = ({ to, children }) => {
 const MobileNavLink = ({ to, children, onClick }) => {
   return (
     <Link 
-      to={to} 
+      href={to} 
       className="text-primary-700 font-medium hover:text-accent-500 transition-colors duration-200 py-2 border-b border-gray-100"
       onClick={onClick}
     >
