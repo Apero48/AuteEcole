@@ -7,31 +7,31 @@ import Card from '../ui/Card';
 const activities = [
   {
     id: 1,
-    title: 'Stockage Pétrolier',
-    description: 'Gestion des dépôts pétroliers et stockage sécurisé des produits pétroliers au Bénin.',
-    image: '/images/distribution-system.jpg',
-    linkTo: '/activities/storage',
+    title: 'Permis B (Voiture)',
+    description: 'Formation complète pour l\'obtention du permis de conduire voiture (catégorie B) avec des moniteurs expérimentés.',
+    image: '/images/WhatsApp Image 2025-09-17 at 04.33.31 (11).jpeg',
+    linkTo: '/permis/voiture',
   },
   {
     id: 2,
-    title: 'Distribution',
-    description: 'Distribution efficace des produits pétroliers à travers notre réseau de distribution au Bénin.',
-    image: '/images/DBPDB2.jpeg',
-    linkTo: '/activities/distribution',
+    title: 'Permis A (Moto)',
+    description: 'Apprenez à conduire une moto en toute sécurité avec nos formations adaptées à tous les niveaux.',
+    image: '/images/WhatsApp Image 2025-09-17 at 04.33.33 (11).jpeg',
+    linkTo: '/permis/moto',
   },
   {
     id: 3,
-    title: 'Logistique',
-    description: 'Gestion optimale de la chaîne logistique pour assurer l’approvisionnement continu en produits pétroliers.',
-    image: '/images/nous.jpeg',
-    linkTo: '/activities/logistics',
+    title: 'Conduite Accompagnée',
+    description: 'Formation anticipée à la conduite accessible dès 15 ans pour une meilleure expérience de conduite.',
+    image: '/images/WhatsApp Image 2025-09-17 at 04.33.38 (5).jpeg',
+    linkTo: '/formations/conducteur',
   },
   {
     id: 4,
-    title: 'Sécurité et Qualité',
-    description: 'Maintien des normes de sécurité et de qualité les plus élevées dans la gestion des produits pétroliers.',
-    image: '/images/distribution-pipes.jpg',
-    linkTo: '/activities/quality',
+    title: 'Stage de Perfectionnement',
+    description: 'Perfectionnez votre conduite avec nos stages adaptés à vos besoins spécifiques.',
+    image: '/images/WhatsApp Image 2025-09-17 at 04.33.38 (7).jpeg',
+    linkTo: '/stages/perfectionnement',
   },
 ];
 
@@ -56,7 +56,7 @@ const ActivitiesSection = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Nos Activités"
-          subtitle="Découvrez nos domaines d'expertise dans l'industrie pétrolière et gazière"
+          subtitle="Découvrez nos formations adaptées à vos besoins en conduite automobile"
           center
         />
         

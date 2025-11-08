@@ -3,31 +3,31 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import Button from '../ui/Button';
 
-// Mock news data
+// Actualités de l'auto-école
 const newsItems = [
   {
     id: 1,
-  title: 'Auto-école inaugure un nouveau dépôt pétrolier à Cotonou',
-    excerpt: 'Un nouveau dépôt stratégique qui augmente la capacité de stockage nationale de 30%.',
-    date: '15 Mai 2023',
-    category: 'Infrastructure',
-    image: '/images/distribution-worker.jpg',
+    title: 'Nouveaux horaires de conduite disponibles',
+    excerpt: 'Nous avons élargi nos créneaux horaires pour s\'adapter à votre emploi du temps chargé. Inscrivez-vous dès maintenant !',
+    date: '15 Novembre 2023',
+    category: 'Actualités',
+    image: '/images/WhatsApp Image 2025-09-17 at 04.33.31 (11).jpeg',
   },
   {
     id: 2,
-    title: 'Modernisation des installations de stockage',
-  excerpt: 'Auto-école lance un programme de modernisation de ses installations pour améliorer la sécurité et l\'efficacité.',
-    date: '28 Juin 2023',
-    category: 'Innovation',
-    image: 'https://images.unsplash.com/photo-1572295810189-10cefd4e0ed6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxnYXMlMjBzdGF0aW9ufGVufDB8fHxibHVlfDE3NDc5OTc0NTd8MA&ixlib=rb-4.1.0&q=85',
+    title: 'Promotion spéciale permis accéléré',
+    excerpt: 'Profitez de -20% sur nos forfaits permis accéléré pour une formation rapide et efficace. Offre valable jusqu\'au 30 novembre.',
+    date: '5 Novembre 2023',
+    category: 'Promotions',
+    image: '/images/WhatsApp Image 2025-09-17 at 04.33.33 (11).jpeg',
   },
   {
     id: 3,
-    title: 'Certification ISO pour la gestion de la qualité',
-  excerpt: 'Auto-école obtient la certification ISO 9001:2015 pour son système de gestion de la qualité.',
-    date: '10 Août 2023',
-    category: 'Qualité',
-    image: '/images/maintenance-worker.jpg',
+    title: 'Atelier sécurité routière',
+    excerpt: 'Participez à notre atelier gratuit sur la sécurité routière le 25 novembre. Places limitées, inscrivez-vous vite !',
+    date: '1 Novembre 2023',
+    category: 'Événements',
+    image: '/images/WhatsApp Image 2025-09-17 at 04.33.38 (5).jpeg',
   },
 ];
 
@@ -38,7 +38,7 @@ const NewsSection = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <SectionTitle
             title="Actualités"
-            subtitle="Restez informé des dernières nouvelles de Auto-école"
+            subtitle="Restez informé des dernières actualités et promotions de notre auto-école"
             className="md:mb-0"
           />
           
