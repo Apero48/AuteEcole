@@ -25,7 +25,7 @@ const Header = () => {
       <div className="bg-primary-700 text-white px-4 py-2">
         <div className="container mx-auto flex justify-between items-center">
             <div className="hidden md:flex space-x-4 text-sm">
-            <a href="tel:+22921312485" className="hover:text-secondary-300">+229 01 55 01 02 85</a>
+            <a href="tel:+33757824687" className="hover:text-secondary-300">+33 7 57 82 46 87</a>
             <a href="mailto:autoecole260@gmail.com" className="hover:text-secondary-300">autoecole260@gmail.com</a>
           </div>
           <div className="flex items-center space-x-4">

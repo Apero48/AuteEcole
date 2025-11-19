@@ -1,8 +1,17 @@
 import React from 'react';
 import Layout from '../../components/layout/Layout';
 import SectionTitle from '../../components/ui/SectionTitle';
+import Gallery from '../../components/ui/Gallery';
 
 const PermisMoto = () => {
+  // Liste des images spécifiques au permis moto
+  const motoImages = [
+    '/images/WhatsApp Image 2025-11-11 at 03.56.40.jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.41 (1).jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.42.jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.44 (1).jpeg'
+  ];
+
   return (
     <Layout>
       <div className="min-h-screen bg-gray-50 py-12">
@@ -119,6 +128,14 @@ const PermisMoto = () => {
                 </div>
               </div>
             </div>
+          </div>
+          
+          <div className="mt-16">
+            <Gallery 
+              images={motoImages}
+              title="Formation Moto en Images"
+              subtitle="Découvrez notre formation moto à travers ces photos"
+            />
           </div>
         </div>
       </div>

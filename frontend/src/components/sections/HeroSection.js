@@ -25,7 +25,7 @@ const slides = [
     title: 'Le permis moto — à partir de 599€',
     subtitle: "Validité des packs : 12 mois • Pistes privées • Enseignants diplômés d'État",
     buttonText: "S'inscrire",
-    buttonLink: '/activities/moto',
+    buttonLink: 'https://share.google/4ekcStzwf2DKaF5aY',
   }
 ];
 
@@ -97,8 +97,9 @@ const HeroSection = () => {
                 <Button
                   variant="primary"
                   size="lg"
-                  as="link"
-                  to={slide.buttonLink}
+                  as="a"
+                  href={slide.buttonLink}
+                  target="_blank"
                   className="shadow-lg"
                 >
                   {slide.buttonText}

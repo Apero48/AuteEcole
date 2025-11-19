@@ -97,7 +97,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary-700 mb-1">Téléphone</h4>
-                  <p className="text-gray-600">+229 01 55 01 02 85</p>
+                  <a href="tel:+33757824687" className="text-gray-600 hover:text-primary-600">+33 7 57 82 46 87</a>
                 </div>
               </div>
               

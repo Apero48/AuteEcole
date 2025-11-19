@@ -2,14 +2,23 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/ui/SectionTitle';
 import Button from '../components/ui/Button';
+import Gallery from '../components/ui/Gallery';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaCar, FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
 
 const ContactPage = () => {
+  // Liste des images pour la galerie de la page de contact
+  const contactImages = [
+    '/images/WhatsApp Image 2025-11-11 at 03.56.27.jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.29 (1).jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.30 (1).jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.33.jpeg'
+  ].map(img => img.replace(/ /g, '%20')); // Encoder les espaces dans les URLs
+
   return (
     <div className="container mx-auto px-4 py-16">
        <div className="w-full mb-12">
         <img
-          src="/images/security-entrance.jpg"
+          src="/images/WhatsApp%20Image%202025-11-11%20at%2003.56.27.jpeg"
           alt="Carrières chez Auto-école"
           className="w-full h-64 object-cover rounded"
         />
@@ -38,7 +47,7 @@ const ContactPage = () => {
                 <FaMapMarkerAlt className="text-primary-600 text-xl mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-semibold text-primary-700 mb-1">Siège social</h3>
-                  <p className="text-gray-600">Zone Portuaire, Route des Pêches, 01 BP 49 Cotonou, Bénin</p>
+                  <p className="text-gray-600">123 Avenue de l'Auto-École, 75000 Paris, France</p>
                 </div>
               </div>
               
@@ -46,7 +55,9 @@ const ContactPage = () => {
                 <FaPhone className="text-primary-600 text-xl mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-semibold text-primary-700 mb-1">Téléphone</h3>
-                  <p className="text-gray-600">+229 21 31 24 85</p>
+                  <p className="text-gray-600">
+                    <a href="tel:+33757824687" className="hover:text-primary-800">+33 7 57 82 46 87</a>
+                  </p>
                 </div>
               </div>
 
@@ -140,7 +151,14 @@ const ContactPage = () => {
                 ></textarea>
               </div>
               <p className="text-sm text-gray-500">* Champs obligatoires</p>
-              <Button type="submit" className="w-full">S'inscrire maintenant</Button>
+              <Button 
+                as="a" 
+                href="https://share.google/4ekcStzwf2DKaF5aY" 
+                target="_blank" 
+                className="w-full flex justify-center"
+              >
+                S'inscrire maintenant
+              </Button>
             </form>
           </motion.div>
         </div>
@@ -276,11 +294,20 @@ const ContactPage = () => {
               <p className="text-gray-600">
                 Notre taux de réussite moyen est de 94% au permis B ! Ce résultat exceptionnel est dû à notre méthode 
                 d'enseignement personnalisée et à l'expérience de nos moniteurs diplômés d'État. Nous accompagnons chaque 
-                élève jusqu'à la réussite.
+                élève individuellement pour garantir les meilleurs résultats.
               </p>
             </motion.div>
           </div>
         </motion.div>
+        
+        {/* Galerie d'images */}
+        <div className="mt-16">
+          <Gallery 
+            images={contactImages}
+            title="Notre École en Images"
+            subtitle="Découvrez notre école et nos installations à travers ces photos"
+          />
+        </div>
       </motion.div>
     </div>
   );

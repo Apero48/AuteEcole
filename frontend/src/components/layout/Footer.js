@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">AUTO-ECOLE FISCHER</h3>
+            <h3 className="text-xl font-bold mb-4">Auto-école</h3>
             <p className="text-gray-300 mb-4">
               Auto-école — Formations au permis de conduire : code, pratique et accompagnement personnalisé.
             </p>
@@ -53,15 +53,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mt-1 mr-3 text-secondary-400" />
-                <span className="text-sm">Zone Portuaire, Route des Pêches, 01 BP 49 Cotonou, Bénin</span>
+                <span className="text-sm">123 Avenue de l'Auto-École, 75000 Paris, France</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-3 text-secondary-400" />
-                <span className="text-sm">+225 01 55 01 02 85</span>
+                <a href="tel:+33757824687" className="text-sm hover:text-white">+33 7 57 82 46 87</a>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-secondary-400" />
-                <span className="text-sm">autoecolefischer01@gmail.com</span>
+                <span className="text-sm">autoecole260@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="bg-primary-900 py-4">
         <div className="container mx-auto px-4 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} AUTO-ECOLE FISCHER. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Auto-école. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

@@ -1,8 +1,17 @@
 import React from 'react';
 import Layout from '../../components/layout/Layout';
 import SectionTitle from '../../components/ui/SectionTitle';
+import Gallery from '../../components/ui/Gallery';
 
 const ConduiteAccompagnee = () => {
+  // Liste des images spécifiques à la formation conducteur
+  const conducteurImages = [
+    '/images/WhatsApp Image 2025-11-11 at 03.56.33 (1).jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.34 (1).jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.35 (1).jpeg',
+    '/images/WhatsApp Image 2025-11-11 at 03.56.37 (1).jpeg'
+  ];
+
   return (
     <Layout>
       <div className="min-h-screen bg-gray-50 py-12">
@@ -160,6 +169,14 @@ const ConduiteAccompagnee = () => {
                 </button>
               </div>
             </div>
+          </div>
+          
+          <div className="mt-16">
+            <Gallery 
+              images={conducteurImages}
+              title="Formation Conducteur en Images"
+              subtitle="Découvrez nos formations de conduite à travers ces photos"
+            />
           </div>
         </div>
       </div>
