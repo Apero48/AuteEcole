@@ -53,15 +53,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mt-1 mr-3 text-secondary-400" />
-                <span className="text-sm">123 Avenue de l'Auto-École, 75000 Paris, France</span>
+                <span className="text-sm">Zone Portuaire, Route des Pêches, 01 BP 49 Cotonou, Bénin</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-3 text-secondary-400" />
-                <a href="tel:+33757824687" className="text-sm hover:text-white">+33 7 57 82 46 87</a>
+                <span className="text-sm">+33 7 57 82 46 87</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-secondary-400" />
-                <span className="text-sm">autoecole260@gmail.com</span>
+                <span className="text-sm">info@auto-ecole.bj</span>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="bg-primary-900 py-4">
         <div className="container mx-auto px-4 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Auto-école. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Auto-école. Tous droits réservés. +33 7 57 82 46 87</p>
         </div>
       </div>
     </footer>
