@@ -87,7 +87,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary-700 mb-1">Adresse</h4>
-                  <p className="text-gray-600">Zone Portuaire, Route des Péches, 01 BP 49 Cotonou, Bénin</p>
+                  <p className="text-gray-600">123 Rue de l'Exemple, 75001 Paris, France</p>
                 </div>
               </div>
               
@@ -107,7 +107,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary-700 mb-1">Email</h4>
-                  <p className="text-gray-600">info@auto-ecole.bj</p>
+                  <a href="mailto:autoecole260@gmail.com" className="text-gray-600 hover:text-primary-600">autoecole260@gmail.com</a>
                 </div>
               </div>
               

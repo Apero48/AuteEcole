@@ -53,15 +53,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mt-1 mr-3 text-secondary-400" />
-                <span className="text-sm">Zone Portuaire, Route des Pêches, 01 BP 49 Cotonou, Bénin</span>
+                <span className="text-sm">123 Avenue de l'Auto-École, 75000 Paris, France</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-3 text-secondary-400" />
-                <span className="text-sm">+33 7 57 82 46 87</span>
+                <a href="tel:+33757824687" className="hover:text-secondary-300 transition-colors">+33 7 57 82 46 87</a>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-secondary-400" />
-                <span className="text-sm">info@auto-ecole.bj</span>
+                <a href="mailto:autoecole260@gmail.com" className="hover:text-secondary-300 transition-colors">autoecole260@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="bg-primary-900 py-4">
         <div className="container mx-auto px-4 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Auto-école. Tous droits réservés. +33 7 57 82 46 87</p>
+          <p>© {new Date().getFullYear()} Auto-école. Tous droits réservés. SACRAMENTO 01 66 78 72 71</p>
         </div>
       </div>
     </footer>
