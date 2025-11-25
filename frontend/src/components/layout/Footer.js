@@ -27,10 +27,6 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Liens Rapides</h3>
             <ul className="space-y-2">
               <FooterLink to="/presentation">À Propos de Nous</FooterLink>
-              <FooterLink to="/activities">Nos Activités</FooterLink>
-              <FooterLink to="/publications">Publications</FooterLink>
-              <FooterLink to="/media">Médiathèque</FooterLink>
-              <FooterLink to="/careers">Carrières</FooterLink>
               <FooterLink to="/contact">Contact</FooterLink>
             </ul>
           </div>
@@ -53,14 +49,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mt-1 mr-3 text-secondary-400" />
-                <span className="text-sm">Zone Portuaire, Route des Pêches, 01 BP 49 Cotonou, Bénin</span>
+                <span className="text-sm">123 Rue de l'Exemple, 75001 Paris, France</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-3 text-secondary-400" />
-                <span className="text-sm">+225 01 55 01 02 85</span>
+                <span className="text-sm">+33 7 57 82 46 87</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-secondary-400" />
+                <span className="text-sm">autoecolefischer01@gmail.com</span>
+              </li>
+              <li className="flex items-center">
+                <FaEnvelope className="mr-3 text-secondary-400 opacity-0" />
                 <span className="text-sm">autoecole260@gmail.com</span>
               </li>
             </ul>
