@@ -380,7 +380,7 @@ const PresentationPage = () => {
                     <FaPhoneAlt className="text-yellow-400 mr-3" />
                     <div>
                       <h3 className="font-semibold">Téléphone</h3>
-                      <a href="tel:+33123456789" className="text-blue-100 hover:underline">01 23 45 67 89</a>
+                      <a href="tel:+33757824687" className="text-blue-100 hover:underline">+33 7 57 82 46 87</a>
                     </div>
                   </div>
                   
